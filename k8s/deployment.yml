@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: sample
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: sample
+
+  template:
+
+    metadata:
+      labels:
+        app: sample
+
+    spec:
+      containers:
+
+      - name: sample
+
+        image:
+          ghcr.io/ramchandk/sample:v1
+
+        ports:
+        - containerPort: 5000
