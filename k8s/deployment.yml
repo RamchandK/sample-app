@@ -23,7 +23,7 @@ spec:
       - name: sample
 
         image:
-          ghcr.io/ramchandk/sample:v1
+          dhi.io/python:3-debian-sfw-ent-dev
 
         ports:
         - containerPort: 5000
